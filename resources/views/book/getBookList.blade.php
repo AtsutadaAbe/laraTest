@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>とりあえずDBアクセス</title>
+</head>
+<body>
+    <h1>とりあえずDBアクセス</h1>
+    <table>
+    <tr>
+        <th>Title</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Review</th>
+        <th>Created</th>
+        <th>Updated</th>
+    </tr>
+    @foreach($data as $val)
+    <tr>
+        <td>{{$val->title}}</td>
+        <td>{{$val->name}}</td>
+        <td>{{$val->price}}</td>
+        <td>{{$val->review}}</td>
+        <td>{{$val->created_at}}</td>
+        <td>{{$val->updated_at}}</td>
+    </tr>
+    @endforeach
+    </table>
+</body>
+</html>
