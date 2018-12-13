@@ -20,7 +20,7 @@ class Item extends Migration
             $table->string('item_name');
             $table->string('maker_name');
             $table->integer('price');
-            $table->string('description');
+            $table->longText('description');
             $table->string('url');
             $table->string('body');
             $table->timestamps();
